@@ -1,0 +1,219 @@
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+@font-face {
+    font-family: MuseoSansRounded-300-webfont;
+    src: url(../fonts/museosansrounded_300/MuseoSansRounded-300-webfont.ttf);
+}
+@font-face {
+    font-family: MuseoSansRounded-100-webfont;
+    src: url(../fonts/museosansrounded_100/MuseoSansRounded-100-webfont.ttf);
+}
+@font-face {
+    font-family: MuseoSansRounded-700-webfont;
+    src: url(../fonts/museosansrounded_700/MuseoSansRounded-700-webfont.ttf);
+}
+@font-face {
+    font-family: MuseoSansRounded-500-webfont;
+    src: url(../fonts/museosansrounded_500/MuseoSansRounded-500-webfont.ttf);
+}
+
+body {
+  font-family: MuseoSansRounded-300-webfont;
+  background-color: white;
+}
+header {
+  background-color: #eb4e32;
+}
+.logo{
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 50px 0;
+}
+header .list {
+  padding: 20px 0;
+  text-align: right;
+}
+header .list a {
+  font-size: 18px;
+  font-family: MuseoSansRounded-500-webfont;
+  color: white;
+  font-weight: bold;
+}
+.iphone {
+  padding: 110px 0;
+  position: relative;
+}
+.iphone img {
+  position: absolute;
+}
+.info {
+  padding: 220px 20px 120px 20px;
+}
+.info h1 {
+  font-size: 62px;
+  font-weight: bold;
+  color: white;
+}
+.btn {
+  border-radius: 25px;
+  font-size: 16px;
+  color: #eb4e32;
+  background: white;
+  padding: 10px 30px;
+  font-family: MuseoSansRounded-700-webfont;
+}
+.info p {
+  font-size: 28px;
+  font-style: italic;
+  color: white;
+  padding: 70px 10px;
+  width: 450px;
+}
+main {
+  padding: 150px 0 0;
+  font-size: 18px;
+  color: #eb4e32;
+  font-weight: bold;
+}
+.outline, .ordering, .vip {
+  padding: 100px 0;
+}
+main h1 {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  font-size: 30px;
+  font-weight: bold;
+}
+main p {
+  margin: 0;
+  padding: 30px 0;
+  color: #585b60;
+  font-size: 14px;
+  width: 340px;
+}
+.outline_img {
+  background-image: url(../img/outline.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 170px 0;
+}
+.ordering_img {
+  background-image: url(../img/ordering.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding: 170px 0;
+}
+.vip_img {
+  background-image: url(../img/vip.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 170px 0;
+}
+.main_iphone {
+  text-align: right;
+  padding: 150px 0 0;
+}
+.app {
+  font-size: 62px;
+  font-weight: bold;
+  color: black;
+  font-weight: bold;
+  padding: 420px 0 50px;
+}
+.app p {
+  color: #585b60;
+  font-size: 20px;
+  width: 100%;
+  padding: 0 0 40px;
+}
+.app input {
+  text-align: center;
+  color: #9da6ac;
+  font-size: 16px;
+  border-radius: 5px;
+  font-family: MuseoSansRounded-300-webfont;
+  border: 1px solid #666666;
+  font-weight: bold;
+  width: 500px;
+  padding: 20px 0;
+}
+.app .btn {
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
+  background: #eb4e32;
+  padding: 15px 0;
+  font-family: MuseoSansRounded-500-webfont;
+  font-weight: bold;
+  width: 500px;
+}
+footer{
+  padding: 150px 0;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer li {
+  padding: 5px;
+  font-size: 20px;
+  list-style-type: none;
+  font-weight: bold;
+}
+footer li a {
+  color: #9da6ac;
+}
+.icon {
+  text-align: center;
+}
+.icon ul {
+  margin: 0;
+  padding: 30px 0 50px;
+}
+.icon li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 35px;
+}
+.icon p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9da6ac;
+}
+footer .bttn {
+  text-align: right;
+}
+footer .download {
+  border-radius: 25px;
+  font-size: 20px;
+  color: white;
+  background: #333333;
+  padding: 10px 50px;
+  font-family: MuseoSansRounded-700-webfont;
+  margin-bottom: 20px;
+}
+footer .partner {
+  border-radius: 25px;
+  font-size: 20px;
+  color: #333333;
+  background: white;
+  padding: 10px 50px;
+  font-family: MuseoSansRounded-700-webfont;
+  border: 1px solid #333333;
+}
+@media (max-width: 991px) {
+}
