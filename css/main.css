@@ -58,9 +58,10 @@ header .list a {
 }
 .iphone img {
   position: absolute;
+  width: 100%;
 }
 .info {
-  padding: 220px 20px 120px 20px;
+  padding: 220px 0px 120px 40px;
 }
 .info h1 {
   font-size: 62px;
@@ -80,7 +81,31 @@ header .list a {
   font-style: italic;
   color: white;
   padding: 70px 10px;
-  width: 450px;
+}
+@media (max-width: 991px) {
+  .iphone img {
+    position: static;
+  }
+  .iphone {
+    padding: 0 0;
+    text-align: center;
+  }
+  .info {
+    padding: 20px 20px;
+  }
+  .info p {
+    text-align: center;
+    font-size: 28px;
+    font-style: italic;
+    color: white;
+    padding: 0 10px;
+  }
+  .logo{
+    background-position: center;
+  }
+  header .list {
+    text-align: center;
+  }
 }
 main {
   padding: 150px 0 0;
@@ -102,8 +127,6 @@ main p {
   margin: 0;
   padding: 30px 0;
   color: #585b60;
-  font-size: 14px;
-  width: 340px;
 }
 .outline_img {
   background-image: url(../img/outline.png);
@@ -123,15 +146,33 @@ main p {
   background-position: right;
   padding: 170px 0;
 }
+.outline_img, .ordering_img, .vip_img {
+  background-size: contain;
+}
+@media (max-width: 991px) {
+  .outline_img, .ordering_img, .vip_img {
+    background-size: contain;
+    padding: 90px 0;
+    background-position: center;
+  }
+  .outline, .ordering, .vip {
+    padding: 50px 0;
+  }
+  main {
+    padding: 0 30px;
+  }
+}
 .main_iphone {
   text-align: right;
   padding: 150px 0 0;
+}
+.main_iphone img {
+  width: 100%;
 }
 .app {
   font-size: 62px;
   font-weight: bold;
   color: black;
-  font-weight: bold;
   padding: 420px 0 50px;
 }
 .app p {
@@ -148,7 +189,6 @@ main p {
   font-family: MuseoSansRounded-300-webfont;
   border: 1px solid #666666;
   font-weight: bold;
-  width: 500px;
   padding: 20px 0;
 }
 .app .btn {
@@ -159,7 +199,20 @@ main p {
   padding: 15px 0;
   font-family: MuseoSansRounded-500-webfont;
   font-weight: bold;
-  width: 500px;
+}
+@media (max-width: 991px) {
+  .app {
+    text-align: center;
+    font-size: 34px;
+    padding: 120px 0 50px;
+  }
+  .app p {
+    font-size: 12px;
+  }
+  .main_iphone {
+    text-align: center;
+    padding: 15px 0 0;
+  }
 }
 footer{
   padding: 150px 0;
@@ -197,7 +250,7 @@ footer li a {
 footer .bttn {
   text-align: right;
 }
-footer .download {
+footer .b_download {
   border-radius: 25px;
   font-size: 20px;
   color: white;
@@ -206,7 +259,7 @@ footer .download {
   font-family: MuseoSansRounded-700-webfont;
   margin-bottom: 20px;
 }
-footer .partner {
+footer .b_partner {
   border-radius: 25px;
   font-size: 20px;
   color: #333333;
@@ -216,4 +269,19 @@ footer .partner {
   border: 1px solid #333333;
 }
 @media (max-width: 991px) {
+  footer{
+    padding: 70px 15px;
+  }
+  footer .bttn {
+    text-align: left;
+  }
+  footer .list {
+    padding: 30px 0;
+  }
+  .icon p {
+    font-size: 16px;
+  }
+  .icon li {
+    padding: 0 25px;
+  }
 }
