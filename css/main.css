@@ -42,6 +42,19 @@ header {
   background-position: left;
   padding: 50px 0;
 }
+.logo_red {
+  text-align: center;
+}
+.modal .list {
+  font-size: 22px;
+  font-family: MuseoSansRounded-500-webfont;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+}
+.modal .list a {
+  color: black;
+}
 header .list {
   padding: 20px 0;
   text-align: right;
@@ -61,20 +74,21 @@ header .list a {
   width: 100%;
 }
 .info {
-  padding: 220px 0px 120px 40px;
+  padding: 265px 0px 90px 40px;
 }
 .info h1 {
   font-size: 62px;
   font-weight: bold;
   color: white;
 }
-.btn {
+.info .btn {
   border-radius: 25px;
   font-size: 16px;
   color: #eb4e32;
   background: white;
   padding: 10px 30px;
   font-family: MuseoSansRounded-700-webfont;
+  margin-bottom: 30px;
 }
 .info p {
   font-size: 28px;
@@ -90,25 +104,39 @@ header .list a {
     padding: 0 0;
     text-align: center;
   }
+  .info .btn {
+    margin: 10px 0 30px;
+  }
+  .info h1 {
+    font-size: 48px;
+  }
   .info {
     padding: 20px 20px;
+    text-align: center;
   }
   .info p {
     text-align: center;
     font-size: 28px;
     font-style: italic;
     color: white;
-    padding: 0 10px;
+    padding: 15px 10px;
   }
-  .logo{
-    background-position: center;
+  .logo {
+    background-image: url(../img/mob_logo.png);
+    background-position: left 20px center;
+  }
+  .menu {
+    background-image: url(../img/menu.png);
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
   }
   header .list {
     text-align: center;
   }
 }
 main {
-  padding: 150px 0 0;
+  padding: 150px 0 120px;
   font-size: 18px;
   color: #eb4e32;
   font-weight: bold;
@@ -162,9 +190,15 @@ main p {
     padding: 0 30px;
   }
 }
+section {
+  background-color: #f3f5f9;
+  background-image: url(../img/big_logo.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
 .main_iphone {
   text-align: right;
-  padding: 150px 0 0;
+  padding: 30px 0 0;
 }
 .main_iphone img {
   width: 100%;
@@ -173,7 +207,7 @@ main p {
   font-size: 62px;
   font-weight: bold;
   color: black;
-  padding: 420px 0 50px;
+  padding: 340px 0 50px;
 }
 .app p {
   color: #585b60;
@@ -187,7 +221,7 @@ main p {
   font-size: 16px;
   border-radius: 5px;
   font-family: MuseoSansRounded-300-webfont;
-  border: 1px solid #666666;
+  border-bottom: 1px solid #cccccc;
   font-weight: bold;
   padding: 20px 0;
 }
@@ -196,9 +230,10 @@ main p {
   font-size: 18px;
   color: white;
   background: #eb4e32;
-  padding: 15px 0;
+  padding: 10px 0;
   font-family: MuseoSansRounded-500-webfont;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 @media (max-width: 991px) {
   .app {
@@ -216,6 +251,7 @@ main p {
 }
 footer{
   padding: 150px 0;
+  
 }
 footer ul {
   margin: 0;
@@ -235,12 +271,12 @@ footer li a {
 }
 .icon ul {
   margin: 0;
-  padding: 30px 0 50px;
+  padding: 25px 0;
 }
 .icon li {
   list-style-type: none;
   display: inline-block;
-  padding: 0 35px;
+  padding: 0 25px;
 }
 .icon p {
   font-size: 18px;
@@ -250,7 +286,7 @@ footer li a {
 footer .bttn {
   text-align: right;
 }
-footer .b_download {
+footer .b_download, .modal .b_download {
   border-radius: 25px;
   font-size: 20px;
   color: white;
@@ -259,7 +295,7 @@ footer .b_download {
   font-family: MuseoSansRounded-700-webfont;
   margin-bottom: 20px;
 }
-footer .b_partner {
+footer .b_partner, .modal .b_partner {
   border-radius: 25px;
   font-size: 20px;
   color: #333333;
@@ -282,6 +318,10 @@ footer .b_partner {
     font-size: 16px;
   }
   .icon li {
-    padding: 0 25px;
+    padding: 0 15px;
+  }
+  .modal-footer .bttn {
+    text-align: center;
+    padding: 50px 0 20px;
   }
 }
